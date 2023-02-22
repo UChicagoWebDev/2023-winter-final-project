@@ -1,6 +1,6 @@
 # Final Project: Belay (a Slack clone)
 
-30 points
+40 points
 
 **DUE: Friday, March 10 by 5:30pm**
 
@@ -53,13 +53,13 @@ your submission any classmates you collaborated with and any materials you consu
 
 ## Requirements and Rubric (40 points total)
 
-### Unauthgenticated UI: (3)
+### Unauthenticated UI: (3 points)
 - Unanthenticated users can create a new account
 - Unauthenticated users can sign in with their username and password
 - Unauthenticed users who try to access a room cannot see any messages in that room, and are sent to 
   the signup/login page instead
 
-### Authenticated UI: (10)
+### Authenticated UI: (10 points)
 - Authenticated users can log out, change their username, and change their password
 - Can see a list of all channels. For each channel, can see how many unread messages the user has
 - Visiting a channel marks all messages in it as read, and all new messages posted to that channel 
@@ -77,7 +77,7 @@ your submission any classmates you collaborated with and any materials you consu
 - Users can add an emoji reaction to any message or reply
 - Hovering over a reaction displays all the users who had that reaction
 
-### Single-Page State (5)
+### Single-Page State (5 points)
 - Only serve one HTML request—handle all other requests through the API
 - Push the channel name (for messages) or parent message id (for replies) to the history and 
   navigation bar when the user navigates to a channel or thread. Users can use the Back button to 
@@ -91,7 +91,7 @@ your submission any classmates you collaborated with and any materials you consu
   those of other students on the graders' machines. e.g.
   `window.localStorage.setItem('trevoraustin_belay_auth_key', 'abcdefg')`
 
-### Responsive Styling: (8)
+### Responsive Styling: (8 points)
 Wide Screen:
 - Show the list of channels down the left-hand side of the screen, and the channel 
   the user is looking at (or a placeholder for no channel) on the right-hand side
@@ -110,7 +110,7 @@ Wide Screen:
   link they can click to navigate back to the channel list.
 
 
-### Database (10 points) (8)
+### Database (8 points)
 - Store channels, messages, and user account information in a SQLite3 database
 - Create the database and its tables with migrations Start the name(s) of your migration file(s) with 
   [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) timestamps so that the file system will 
@@ -129,7 +129,7 @@ Wide Screen:
   store the *latest* timestamp or message id seen for each user in each channel—you don't have to 
 - Sanitize all database inputs using prepared statements
 
-### API (6)
+### API (6 points)
 - Give API endpoints a unique path namespace to distinguish them from your HTML
   path(s) e.g. `/api/endpoint1`, `/api/encpoint2` etc.
 - Authentication endpoint that accepts a username and password, and returns a session token
